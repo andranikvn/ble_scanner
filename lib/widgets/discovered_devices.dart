@@ -48,12 +48,12 @@ class DiscoveredDevices extends StatelessWidget {
             },
           ),
         );
-        else return _bluetoothDisabled(snapshot.data!);
+        else return _bluetoothDisabled(snapshot.data);
       }
     );
   }
 
-  Widget _bluetoothDisabled(BluetoothState state) {
+  Widget _bluetoothDisabled(BluetoothState? state) {
     return Scaffold(
       body: Container(
         child: Center(
